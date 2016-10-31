@@ -1,0 +1,15 @@
+Ingeca/.idea/encodings.xml
+Ingeca/.idea/gradle.xml
+Ingeca/.idea/misc.xml
+Ingeca/.idea/modules.xml
+Ingeca/.idea/runConfigurations.xml
+Ingeca/app/.gitignore
+Ingeca/app/build.gradle
+Ingeca/app/proguard-rules.pro
+Ingeca/build.gradle
+Ingeca/gradle.properties
+Ingeca/gradle/wrapper/gradle-wrapper.jar
+Ingeca/gradle/wrapper/gradle-wrapper.properties
+Ingeca/gradlew
+Ingeca/gradlew.bat
+Ingeca/settings.gradle

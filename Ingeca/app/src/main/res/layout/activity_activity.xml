@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="59dp">
+
+        <ImageButton
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            android:id="@+id/imageButton"
+            android:onClick="onReturn"/>
+
+        <TextView
+            android:text="Activités et Evénements"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="25sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Covoiturage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/covoitText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_green"
+            android:textColor="@android:color/background_light"
+            android:onClick="onCovoit"/>
+
+        <TextView
+            android:text="Entraide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/helpText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_orange"
+            android:textColor="@android:color/background_light"
+            android:onClick="onHelp"/>
+
+        <TextView
+            android:text="Général"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/globalText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_blue"
+            android:textColor="@android:color/background_light"
+            android:onClick="onGlobal"/>
+        <TextView
+            android:text="Tous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/allText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_red"
+            android:textColor="@android:color/background_light"
+            android:onClick="onAll"/>
+    </LinearLayout>
+</LinearLayout>

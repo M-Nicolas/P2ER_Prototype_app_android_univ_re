@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="59dp">
+
+        <ImageButton
+            android:layout_height="match_parent"
+            app:srcCompat="?android:attr/actionModeCloseDrawable"
+            android:id="@+id/imageButton3"
+            android:layout_width="69dp" />
+
+        <TextView
+            android:text="Entraide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="25sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Bonjour, j’ai un problème avec mon ordinateur pour installer un programme quelq’un peut-il me venir en aide ?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/helpText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_green"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:text="Vous savez comment faire pour se faire rembourser les frais d’inscription lorsqu’on reçoit notre notification en retard?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/helpText2"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_green"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+</LinearLayout>

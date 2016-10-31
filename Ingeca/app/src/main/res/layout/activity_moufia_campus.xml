@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Campus du Moufia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Cartes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/MapText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_green"
+            android:textColor="@android:color/background_light"
+            android:onClick="onCartes"/>
+
+        <TextView
+            android:text="Activités et Evènements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/ActivityText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_blue"
+            android:textColor="@android:color/background_light"
+            android:onClick="onActivity"/>
+
+        <TextView
+            android:text="Forums"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/ForumText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_red"
+            android:textColor="@android:color/background_light"
+            android:onClick="onForums"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/moufia"
+            android:onClick="onNews">
+
+            <TextView
+                android:text="Sécurisation du campus du Moufia :\nles premières mesures"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center"
+                android:id="@+id/newsText"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_weight="0.07"
+                android:background="#AA000000"
+                android:textColor="@android:color/background_light"
+                android:layout_row="6"
+                android:layout_column="0" />
+        </GridLayout>
+
+        <TextView
+            android:text="Services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/servicesText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_orange"
+            android:textColor="@android:color/background_light"
+            android:onClick="onServices"/>
+    </LinearLayout>
+</LinearLayout>

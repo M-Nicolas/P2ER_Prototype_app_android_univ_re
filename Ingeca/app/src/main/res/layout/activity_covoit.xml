@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="59dp">
+
+        <ImageButton
+            android:layout_height="match_parent"
+            app:srcCompat="?android:attr/actionModeCloseDrawable"
+            android:id="@+id/imageButton"
+            android:layout_width="69dp"
+            android:onClick="onReturn" />
+
+        <TextView
+            android:text="Covoiturage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="25sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Quelqu’un part à st Andrée se soir? C’est pour un convoiturage ! Merci bien !"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/covoitText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_blue"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+</LinearLayout>
