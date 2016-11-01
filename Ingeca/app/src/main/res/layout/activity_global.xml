@@ -13,7 +13,8 @@
             android:layout_height="match_parent"
             app:srcCompat="?android:attr/actionModeCloseDrawable"
             android:id="@+id/imageButton3"
-            android:layout_width="69dp" />
+            android:layout_width="69dp"
+            android:onClick="onReturn" />
 
         <TextView
             android:text="Générale"

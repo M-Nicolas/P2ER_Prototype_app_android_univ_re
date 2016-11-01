@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
+
         loadingTextView = (TextView) findViewById(R.id.loadingText);
 
         Handler handler = new Handler();
