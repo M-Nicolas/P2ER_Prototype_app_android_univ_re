@@ -17,14 +17,21 @@
             android:onClick="onReturn" />
 
         <TextView
-            android:text="Tous"
-            android:layout_width="match_parent"
+            android:text="Fil d'informations"
+            android:layout_width="246dp"
             android:layout_height="match_parent"
             android:id="@+id/textView"
             android:textAlignment="center"
             android:textStyle="normal|bold"
             android:textSize="25sp"
             android:gravity="center" />
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            android:id="@+id/imageButton2"
+            android:layout_width="69dp"
+            android:onClick="onAdd"/>
     </LinearLayout>
 
     <LinearLayout
@@ -34,31 +41,31 @@
         android:weightSum="1">
 
         <TextView
-            android:text="Demandes d'informations"
+            android:text="Où trouver le bureau du P2ER?"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:id="@+id/MapText"
+            android:id="@+id/bureauText"
             android:textAlignment="center"
             android:textSize="19sp"
             android:textStyle="normal|bold"
             android:layout_weight="0.25"
-            android:background="@drawable/background_button_green"
+            android:background="@drawable/background_button_blue"
             android:textColor="@android:color/background_light"
-            android:onClick="onInformation" />
+            android:onClick="onBureau" />
 
         <TextView
-            android:text="Discussions diverses"
+            android:text="Que faire pour récupérer mon diplôme?"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:id="@+id/ActivityText"
+            android:id="@+id/diplomeText"
             android:textAlignment="center"
             android:textSize="19sp"
             android:textStyle="normal|bold"
             android:layout_weight="0.25"
-            android:background="@drawable/background_button_green"
+            android:background="@drawable/background_button_blue"
             android:textColor="@android:color/background_light"
-            android:onClick="onVarious"/>
+            android:onClick="onDiplome"/>
     </LinearLayout>
 </LinearLayout>

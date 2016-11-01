@@ -23,6 +23,10 @@
         <activity android:name=".activities.GlobalActivity" />
         <activity android:name=".activities.HelpActivity" />
         <activity android:name=".activities.AllActivity" />
+        <activity android:name=".ForumsActivity" />
+        <activity android:name=".forums.InformationActivity" />
+        <activity android:name=".forums.information.BureauActivity" />
+        <activity android:name=".forums.information.DiplomeActivity" />
     </application>
 
 </manifest>

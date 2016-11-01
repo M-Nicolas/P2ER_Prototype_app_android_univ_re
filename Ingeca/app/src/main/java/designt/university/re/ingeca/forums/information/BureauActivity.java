@@ -1,4 +1,4 @@
-package designt.university.re.ingeca;
+package designt.university.re.ingeca.forums.information;
 
 import android.app.ActionBar;
 import android.content.Intent;
@@ -6,19 +6,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import designt.university.re.ingeca.R;
 import designt.university.re.ingeca.forums.InformationActivity;
-import designt.university.re.ingeca.forums.VariousActivity;
 
 /**
- * Created by Meurgues Nicolas on 30/10/2016.
+ * Created by Meurgues Nicolas on 01/11/2016.
  */
 
-public class ForumsActivity extends AppCompatActivity {
+public class BureauActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forums);
+        setContentView(R.layout.activity_bureau);
 
         View decorView = getWindow().getDecorView();
         // Hide the status bar.
@@ -34,17 +34,7 @@ public class ForumsActivity extends AppCompatActivity {
     }
 
     public void onReturn(View v) {
-        Intent intent = new Intent(this, MoufiaCampusActivity.class);
-        startActivity(intent);
-    }
-
-    public void onInformation(View v) {
         Intent intent = new Intent(this, InformationActivity.class);
-        startActivity(intent);
-    }
-
-    public void onVarious(View v) {
-        Intent intent = new Intent(this, VariousActivity.class);
         startActivity(intent);
     }
 }

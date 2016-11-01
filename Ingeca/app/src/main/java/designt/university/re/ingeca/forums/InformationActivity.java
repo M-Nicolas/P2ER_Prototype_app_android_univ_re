@@ -1,4 +1,4 @@
-package designt.university.re.ingeca;
+package designt.university.re.ingeca.forums;
 
 import android.app.ActionBar;
 import android.content.Intent;
@@ -6,19 +6,21 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import designt.university.re.ingeca.forums.InformationActivity;
-import designt.university.re.ingeca.forums.VariousActivity;
+import designt.university.re.ingeca.ForumsActivity;
+import designt.university.re.ingeca.R;
+import designt.university.re.ingeca.forums.information.BureauActivity;
+import designt.university.re.ingeca.forums.information.DiplomeActivity;
 
 /**
- * Created by Meurgues Nicolas on 30/10/2016.
+ * Created by Meurgues Nicolas on 01/11/2016.
  */
 
-public class ForumsActivity extends AppCompatActivity {
+public class InformationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forums);
+        setContentView(R.layout.activity_information);
 
         View decorView = getWindow().getDecorView();
         // Hide the status bar.
@@ -34,17 +36,17 @@ public class ForumsActivity extends AppCompatActivity {
     }
 
     public void onReturn(View v) {
-        Intent intent = new Intent(this, MoufiaCampusActivity.class);
+        Intent intent = new Intent(this, ForumsActivity.class);
         startActivity(intent);
     }
 
-    public void onInformation(View v) {
-        Intent intent = new Intent(this, InformationActivity.class);
+    public void onBureau(View v) {
+        Intent intent = new Intent(this, BureauActivity.class);
         startActivity(intent);
     }
 
-    public void onVarious(View v) {
-        Intent intent = new Intent(this, VariousActivity.class);
+    public void onDiplome(View v) {
+        Intent intent = new Intent(this, DiplomeActivity.class);
         startActivity(intent);
     }
 }
