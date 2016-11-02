@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="59dp">
+
+        <ImageButton
+            android:layout_height="match_parent"
+            app:srcCompat="?android:attr/actionModeCloseDrawable"
+            android:id="@+id/imageButton"
+            android:layout_width="69dp"
+            android:onClick="onReturn" />
+
+        <TextView
+            android:text="Discussion diverses"
+            android:layout_width="246dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="25sp"
+            android:gravity="center" />
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            android:id="@+id/imageButton2"
+            android:layout_width="69dp"
+            android:onClick="onAdd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Connaissez-vous une bonne série à regarder?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/bureauText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_blue"
+            android:textColor="@android:color/background_light"
+            android:onClick="onSeries" />
+
+        <TextView
+            android:text="J'ai lu un article intéressant..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/diplomeText"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_button_blue"
+            android:textColor="@android:color/background_light"
+            android:onClick="onArticle"/>
+    </LinearLayout>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package designt.university.re.ingeca.forums;
+package designt.university.re.ingeca.forums.various;
 
 import android.app.ActionBar;
 import android.content.Intent;
@@ -6,21 +6,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import designt.university.re.ingeca.ForumsActivity;
 import designt.university.re.ingeca.R;
-import designt.university.re.ingeca.forums.various.ArticleActivity;
-import designt.university.re.ingeca.forums.various.SeriesActivity;
+import designt.university.re.ingeca.forums.VariousActivity;
 
 /**
  * Created by Meurgues Nicolas on 01/11/2016.
  */
 
-public class VariousActivity extends AppCompatActivity {
+public class SeriesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_various);
+        setContentView(R.layout.activity_series);
 
         View decorView = getWindow().getDecorView();
         // Hide the status bar.
@@ -36,17 +34,7 @@ public class VariousActivity extends AppCompatActivity {
     }
 
     public void onReturn(View v) {
-        Intent intent = new Intent(this, ForumsActivity.class);
-        startActivity(intent);
-    }
-
-    public void onSeries(View v) {
-        Intent intent = new Intent(this, SeriesActivity.class);
-        startActivity(intent);
-    }
-
-    public void onArticle(View v) {
-        Intent intent = new Intent(this, ArticleActivity.class);
+        Intent intent = new Intent(this, VariousActivity.class);
         startActivity(intent);
     }
 }

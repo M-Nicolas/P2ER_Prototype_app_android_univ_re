@@ -18,13 +18,20 @@
 
         <TextView
             android:text="Covoiturage"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/textView"
             android:textAlignment="center"
             android:textStyle="normal|bold"
             android:textSize="25sp"
-            android:gravity="center" />
+            android:gravity="center"
+            android:layout_width="246dp" />
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            android:id="@+id/imageButton2"
+            android:layout_width="69dp"
+            android:onClick="onAdd"/>
     </LinearLayout>
 
     <LinearLayout
@@ -35,7 +42,7 @@
 
         <TextView
             android:text="Quelqu’un part à st Andrée se soir? C’est pour un convoiturage ! Merci bien !"
-            android:layout_width="match_parent"
+            android:layout_width="322dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:id="@+id/covoitText"

@@ -10,52 +10,57 @@
         android:layout_height="59dp">
 
         <ImageButton
-            android:layout_width="69dp"
             android:layout_height="match_parent"
-            app:srcCompat="?attr/actionModeCloseDrawable"
+            app:srcCompat="?android:attr/actionModeCloseDrawable"
             android:id="@+id/imageButton"
-            android:onClick="onReturn"/>
+            android:layout_width="69dp"
+            android:onClick="onReturn" />
 
         <TextView
             android:text="Informations"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/textView"
             android:textAlignment="center"
             android:textStyle="normal|bold"
-            android:textSize="25sp"
-            android:gravity="center" />
+            android:textSize="23sp"
+            android:gravity="center"
+            android:layout_width="match_parent" />
     </LinearLayout>
-
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/NewsList">
+
+            <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/News2"
-                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:id="@+id/News1"
                 android:background="@drawable/background_button_white"
+                android:padding="10dp"
                 android:weightSum="1">
 
                 <TextView
-                    android:text="LE GRAND NORD TE TENTE ? TU AS JUSQU'AU 16 NOVEMBRE POUR PRÉSENTER TON DOSSIER !"
+                    android:text="COLLOQUE : LANGUES, CULTURES ET TRANSMISSIONS : DYNAMIQUES CRÉOLES"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Information1"
+                    android:id="@+id/Information"
                     android:background="@drawable/background_button_green"
                     android:textStyle="normal|bold"
                     android:textAlignment="center"
                     android:textSize="17sp" />
 
                 <TextView
-                    android:text="Les établissements universitaires du Québec, dans le cadre du Programme d'Echanges d'Etudiants  Bureau de Coopération Inter-universitaire (BCI)-CREPUQ ont établi des programmes d'échanges d'étudiants avec des établissements universitaires extérieurs au Canada.  L'accord, conclu entre le BCI et l'Université de la Réunion permet d'organiser des échanges d'étudiants entre les établissements d'enseignement supérieur québécois et l'Université de la Réunion  Le programme d'échanges 2017-2018 est ouvert et vous avez jusqu'au 16 novembre pourpré-candidater.  Le dossier est disponible ici : http://www.univ-reunion.fr/international/etudier-a-letranger/programme-dechanges-etudiants-du-bci-crepuq/     Merci de contacter la Direction des relations internationales (DRI) pour plus d'informations :  Sylviane Boulanger sylviane.boulanger@univ-reunion.fr"
+                    android:text="Le LCF et le Département Créole de l'UFR Lettres et Sciences Humaines ont le plaisir de vous convier au colloque qu'ils organisent, en partenariat avec le Conseil Départemental de La Réunion, la DACOI et la Ville de Saint-Denis, sur le thème 'Langues, cultures et transmissions : dynamiques créoles', du mercredi 26 octobre au vendredi 28 octobre 2016 "
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/text"
+                    android:id="@+id/textView5"
                     android:background="@drawable/background_button_orange"
                     android:textAlignment="center"
                     android:textSize="17sp" />
@@ -63,10 +68,10 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/affiche_mobilite"
-                    android:id="@+id/imageView2"
-                    android:layout_weight="1" />
+                    app:srcCompat="@drawable/image"
+                    android:id="@+id/imageView" />
             </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
 </LinearLayout>

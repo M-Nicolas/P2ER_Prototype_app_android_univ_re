@@ -39,24 +39,4 @@ public class ActivityActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MoufiaCampusActivity.class);
         startActivity(intent);
     }
-
-    public void onCovoit(View v) {
-        Intent intent = new Intent(this, CovoitActivity.class);
-        startActivity(intent);
-    }
-
-    public void onHelp(View v) {
-        Intent intent = new Intent(this, HelpActivity.class);
-        startActivity(intent);
-    }
-
-    public void onGlobal(View v) {
-        Intent intent = new Intent(this, GlobalActivity.class);
-        startActivity(intent);
-    }
-
-    public void onAll(View v) {
-        Intent intent = new Intent(this, AllActivity.class);
-        startActivity(intent);
-    }
 }

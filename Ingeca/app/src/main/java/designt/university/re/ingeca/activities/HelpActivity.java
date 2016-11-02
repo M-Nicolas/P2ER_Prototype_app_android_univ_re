@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import designt.university.re.ingeca.ActivityActivity;
+import designt.university.re.ingeca.ForumsActivity;
 import designt.university.re.ingeca.R;
 
 /**
@@ -34,7 +34,7 @@ public class HelpActivity extends AppCompatActivity {
     }
 
     public void onReturn(View v) {
-        Intent intent = new Intent(this, ActivityActivity.class);
+        Intent intent = new Intent(this, ForumsActivity.class);
         startActivity(intent);
     }
 }

@@ -36,7 +36,7 @@ public class MoufiaCampusActivity extends AppCompatActivity {
     }
 
     public void onActivity(View v) {
-        Intent intent = new Intent(this, ActivityActivity.class);
+        Intent intent = new Intent(this, NewsActivity.class);
         startActivity(intent);
     }
 
@@ -46,7 +46,7 @@ public class MoufiaCampusActivity extends AppCompatActivity {
     }
 
     public void onNews(View v) {
-        Intent intent = new Intent(this, NewsActivity.class);
+        Intent intent = new Intent(this, ActivityActivity.class);
         startActivity(intent);
     }
 

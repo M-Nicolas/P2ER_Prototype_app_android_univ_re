@@ -11,7 +11,6 @@
         <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -27,6 +26,10 @@
         <activity android:name=".forums.InformationActivity" />
         <activity android:name=".forums.information.BureauActivity" />
         <activity android:name=".forums.information.DiplomeActivity" />
+        <activity android:name=".forums.VariousActivity" />
+        <activity android:name=".forums.various.ArticleActivity" />
+        <activity android:name=".forums.various.SeriesActivity" />
+        <activity android:name=".NewsActivity" />
     </application>
 
 </manifest>

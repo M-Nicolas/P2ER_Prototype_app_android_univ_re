@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import designt.university.re.ingeca.activities.AllActivity;
+import designt.university.re.ingeca.activities.CovoitActivity;
+import designt.university.re.ingeca.activities.GlobalActivity;
+import designt.university.re.ingeca.activities.HelpActivity;
 import designt.university.re.ingeca.forums.InformationActivity;
 import designt.university.re.ingeca.forums.VariousActivity;
 
@@ -38,13 +42,28 @@ public class ForumsActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onInformation(View v) {
-        Intent intent = new Intent(this, InformationActivity.class);
+    public void onVarious(View v) {
+        Intent intent = new Intent(this, VariousActivity.class);
         startActivity(intent);
     }
 
-    public void onVarious(View v) {
-        Intent intent = new Intent(this, VariousActivity.class);
+    public void onCovoit(View v) {
+        Intent intent = new Intent(this, CovoitActivity.class);
+        startActivity(intent);
+    }
+
+    public void onHelp(View v) {
+        Intent intent = new Intent(this, HelpActivity.class);
+        startActivity(intent);
+    }
+
+    public void onGlobal(View v) {
+        Intent intent = new Intent(this, GlobalActivity.class);
+        startActivity(intent);
+    }
+
+    public void onAll(View v) {
+        Intent intent = new Intent(this, AllActivity.class);
         startActivity(intent);
     }
 }
